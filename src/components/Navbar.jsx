@@ -8,7 +8,7 @@ const Navbar = () => {
         setMenu(!menu)
     }
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-neutral-50 text-gray-600">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 shadow-lg bg-neutral-50 text-gray-600">
             <div>
                 <img src={logo} alt="Logo" style={{width: '150px'}}/>
             </div>
