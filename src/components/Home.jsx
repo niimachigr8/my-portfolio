@@ -1,7 +1,6 @@
 import React from 'react';
 import ImgHome from '../assets/home.png'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import { FaDownload  } from 'react-icons/fa';
 import SocialLinks from './SocialLinks';
 const Home = () => {
     const words= ["Front End Dev","JS Enthusiast","Tech Lover","Persistent Learner"]

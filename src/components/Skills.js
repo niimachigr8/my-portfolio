@@ -1,38 +1,94 @@
 import React from 'react'
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JavaScript from '../assets/javascript.png';
-import ReactImg from '../assets/react.png';
-import Node from '../assets/node.png';
-import FireBase from '../assets/firebase.png';
-import AWS from '../assets/aws.png';
-import GitHub from '../assets/github.png';
-import Tailwind from '../assets/tailwind.png';
-import Mongo from '../assets/mongo.png';
+import { FaHtml5, FaJs, FaReact, FaAngular, FaSass} from 'react-icons/fa'
+import {SiCss3, SiRedux, SiTailwindcss, SiMaterialui,SiFigma, SiGit} from 'react-icons/si'
+
 
 const Skills = () => {
+    const style = {
+        size : 60,
+        color: '#525E75'
+    }
+    const skills = [
+        {
+            id: 1,
+            child :(
+                <> <FaHtml5 {...style} />
+                </>
+            ),
+        },
+        {
+            id: 2,
+            child :(
+                <> <SiCss3  {...style} /></>
+            )
+        },
+        {
+            id: 3,
+            child :(
+                <> <FaJs  {...style}/></>
+            )
+        },
+        {
+            id: 4,
+            child :(
+                <> <FaReact  {...style}/></>
+            )
+        },
+        {
+            id: 5,
+            child :(
+                <> <SiRedux  {...style}/></>
+            )
+        },
+        {
+            id: 6,
+            child :(
+                <> <FaAngular  {...style}/></>
+            )
+        },
+        {
+            id: 7,
+            child :(
+                <> <FaSass  {...style}/></>
+            )
+        },
+        {
+            id: 8,
+            child :(
+                <> <SiMaterialui  {...style}/></>
+            )
+        },
+        {
+            id: 9,
+            child :(
+                <> <SiTailwindcss  {...style}/></>
+            )
+        },
+        {
+            id: 10,
+            child :(
+                <> <SiFigma  {...style}/></>
+            )
+        },
+        {
+            id: 11,
+            child :(
+                <> <SiGit  {...style}/></>
+            )
+        },
+    ]
 return (
-    <div name="skills" className='h-screen w-full bg-slate-50'>
-        <div className='max-w-[1000px] m-auto flex flex-col justify-center'>
+    <div name="skills" className='h-screen w-full'>
+        <div className='max-w-[1000px] mx-auto flex flex-col justify-center py-20'>
             <div>
-                <p className='text-4xl font-bold  text-gray-600'>Skills</p>
-                <p>Some technologies I've worked with </p>
+                <p className='text-center md:text-left text-4xl font-bold  text-gray-600 '>Tech & Tools</p>
             </div>
-
-            <div>
-                <div className='w-20'>
-                    <img src={HTML} alt='HTML logo'/>
-                    <p>HTML</p>
-                </div>
-                <div className='w-20'>
-                    <img src={CSS} alt='CSS logo'/>
-                    <p>CSS</p>
-                </div>
-                <div className='w-20'>
-                    <img src={JavaScript} alt='Js logo'/>
-                    <p>Javascript</p>
-                </div>
-
+            <div className='w-full grid grid-cols-2 sm:grid-cols-4  px-12  py-8 gap-8'>
+                {skills.map(({id, child,style}) => (
+                            <div key={id} className="h-[120px] flex items-center justify-center shadow-md shadow-[#aabace] hover:scale-110 duration-800' ">
+                                {child}
+                            </div>
+                ))}
             </div>
         </div>
     </div>
