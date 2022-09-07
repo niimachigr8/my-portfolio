@@ -79,7 +79,7 @@ const Skills = () => {
     ]
 return (
     <div name="skills" className='h-screen w-full'>
-        <div className='max-w-[1000px] mx-auto flex flex-col justify-center py-20'>
+        <div className='max-w-[1000px] mx-auto flex flex-col justify-center my-16'>
             <div>
                 <p className='text-center md:text-left text-4xl font-bold  text-gray-600 '>Tech & Tools</p>
             </div>
