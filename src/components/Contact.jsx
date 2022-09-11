@@ -8,8 +8,8 @@ const Contact = () => {
             <div className='max-w-[1000px] mx-auto flex flex-col justify-center '>
                 <div className="w-full grid md:grid-cols-2 py-12 gap-8">
                     <div className=" text-gray-600">
-                        <p className="text-3xl md:text-5xl font-bold mt-12 text-center md:text-right">Get in touch</p>
-                        <p className="py-6 text-2xl text-end">Feel free to reach out if you think we could work together
+                        <p className="text-3xl md:text-5xl font-bold mt-12 text-center">Get in touch</p>
+                        <p className="py-6 text-xl px-8 lg:text-2xl text-center">Feel free to reach out if you think we could work together
                             or just want to connect 🚀
                         </p>
                         <div className="flex flex-row justify-center items-center">
