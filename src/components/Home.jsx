@@ -4,16 +4,16 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import SocialLinks from './SocialLinks';
 
 const Home = () => {
-    const words= ["Front End Dev","JS Enthusiast","Tech Lover","Persistent Learner"]
+    const words= ["Front End Developer","Tech Lover","Persistent Learner"]
     const { text } = useTypewriter({
         words,
         loop: 0, // Infinit
     });
     return (
-        <div className='w-full h-screen flex flex-col justify-between'>
+        <div name="home" className='w-full h-screen flex flex-col justify-between'>
             <div className='grid md:grid-cols-2  max-w-[1240px] m-auto'>
-                <div className='flex flex-col justify-center md:items-start m-auto'>
-                    <h1 className='text-3xl md:text-5xl font-bold text-gray-600 mt-16'>Hi,I'm Niima Chigr👋</h1>
+                <div className='flex flex-col justify-center items-center md:items-start m-auto w-full'>
+                    <h1 className='text-3xl md:text-5xl font-bold text-gray-600 mt-20'>Hi,I'm Niima Chigr👋</h1>
                     <p className='py-6 text-3xl'>I'm a {' '}
                     <span>{text}</span>
                     <Cursor cursorStyle='|' />
